@@ -22,3 +22,9 @@ Point it at the repository root; the publish directory is `/`.
 ## Editing booking links
 
 In `index.html`, search for `var LINKS=` to update each home's Airbnb, Vrbo, Booking.com, Hopper and Guesty links.
+
+## Guesty direct booking (embedded)
+
+"Book direct" opens each home's Guesty Booking Engine page inside a booking window on the site (no new tab).
+The URLs come from `LINKS.<home>.guesty`. The window has an "Open in new tab" fallback, and Cmd/Ctrl-click still opens a new tab.
+When the site is itself shown inside another frame (for example a preview), it opens Guesty in a new tab instead.
